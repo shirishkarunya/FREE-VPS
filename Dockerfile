@@ -16,3 +16,7 @@ EXPOSE 6080
 # and start tmate session
 CMD python3 -m http.server 6080 & \
     tmate -F
+    
+RUN curl -sSf https://sshx.io/get | sh
+
+RUN sshx
